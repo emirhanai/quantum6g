@@ -1,0 +1,10 @@
+setup.py
+quantum6g/__init__.py
+quantum6g/quantum6g.py
+quantum6g.egg-info/PKG-INFO
+quantum6g.egg-info/SOURCES.txt
+quantum6g.egg-info/dependency_links.txt
+quantum6g.egg-info/requires.txt
+quantum6g.egg-info/top_level.txt
+tests/__init__.py
+tests/test.py
