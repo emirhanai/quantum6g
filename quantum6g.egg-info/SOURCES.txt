@@ -1,3 +1,4 @@
+setup.cfg
 setup.py
 quantum6g/__init__.py
 quantum6g/quantum6g.py
