@@ -6,7 +6,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name="quantum6g",
-    version="1.1.0",
+    version="1.1.1",
     description="This library is an automatic artificial intelligence library that combines Quantum and 6G technologies.",
     author="Emirhan BULUT",
     author_email="emirhan@isap.solutions",
