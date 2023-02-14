@@ -31,9 +31,12 @@ print("Accuracy: {:.2f}%".format(accuracy * 100))
 ```
 ## Donate
 You can donate for this project!
-*ETH - ERC20: 0xa6F7170Ca63cf284A8ba6339b565445468E04Ff2*
-*BTC - Bech32: bc1qfek2lun4tc7d7zftz0v4auxc9dzn77h9xq9x26v02u6s3rgl7hesxt4r2h*
-*USDT - TRC20: TWVcF24DjPnGfhegmJjBQw2iE4vxQBuYTY*
+
+**ETH - ERC20: 0xa6F7170Ca63cf284A8ba6339b565445468E04Ff2**
+
+**BTC - Bech32: bc1qfek2lun4tc7d7zftz0v4auxc9dzn77h9xq9x26v02u6s3rgl7hesxt4r2h**
+
+**USDT - TRC20: TWVcF24DjPnGfhegmJjBQw2iE4vxQBuYTY**
 
 ## Documentation
 For more information on how to use the Quantum6G library, please refer to the documentation available at [the soon].
