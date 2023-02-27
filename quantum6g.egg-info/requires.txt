@@ -1,2 +1,2 @@
-pennylane
 numpy
+tensorflow

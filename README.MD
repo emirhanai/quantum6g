@@ -14,20 +14,21 @@ Here is a simple example to get started with the Quantum6G library:
 
 ``` 
 from quantum6g import Quantum6G
-import numpy 
 ```
 
 ## Create a quantum neural network
 
-``` quantum_6g = Quantum6G() ```
+``` quantum_6g = Quantum6G(num_wires=4,num_layers=8,batch_size=128,learning_rate=0.002)```
 
 ## Build the model
-``` quantum_6g_model = quantum_6g.build_model(X_train, y_train, X_test, y_test) ```
+``` 
+quantum_6g = quantum_6g.build_model(X_train, y_train, X_test, y_test,epochs=5)
+```
 
 ## Evaluate the model
 ``` 
-accuracy = quantum_6g_model.evaluate(X_test,y_test)[1]
-print("Accuracy: {:.2f}%".format(accuracy * 100)) 
+print("Accuracy: {:.2f}%".format(quantum_6g[1][1] * 100))
+print("Loss: {:.2f}%".format(quantum_6g[1][0] * 100))
 ```
 ## Donate
 You can donate for this project!

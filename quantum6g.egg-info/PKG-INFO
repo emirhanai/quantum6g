@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: quantum6g
-Version: 1.1.1
+Version: 1.2.0
 Summary: This library is an automatic artificial intelligence library that combines Quantum and 6G technologies.
 Home-page: https://github.com/emirhanai/quantum6g
 Author: Emirhan BULUT
@@ -24,21 +24,30 @@ Here is a simple example to get started with the Quantum6G library:
 
 ``` 
 from quantum6g import Quantum6G
-import numpy 
 ```
 
 ## Create a quantum neural network
 
-``` quantum_6g = Quantum6G() ```
+``` quantum_6g = Quantum6G(num_wires=4,num_layers=8,batch_size=128,learning_rate=0.002)```
 
 ## Build the model
-``` quantum_6g_model = quantum_6g.build_model(X_train, y_train, X_test, y_test) ```
+``` 
+quantum_6g = quantum_6g.build_model(X_train, y_train, X_test, y_test,epochs=5)
+```
 
 ## Evaluate the model
 ``` 
-accuracy = quantum_6g_model.evaluate(X_test,y_test)[1]
-print("Accuracy: {:.2f}%".format(accuracy * 100)) 
+print("Accuracy: {:.2f}%".format(quantum_6g[1][1] * 100))
+print("Loss: {:.2f}%".format(quantum_6g[1][0] * 100))
 ```
+## Donate
+You can donate for this project!
+
+**ETH - ERC20**: 0xa6F7170Ca63cf284A8ba6339b565445468E04Ff2
+
+**BTC - Bech32**: bc1qfek2lun4tc7d7zftz0v4auxc9dzn77h9xq9x26v02u6s3rgl7hesxt4r2h
+
+**USDT - TRC20**: TWVcF24DjPnGfhegmJjBQw2iE4vxQBuYTY
 
 ## Documentation
 For more information on how to use the Quantum6G library, please refer to the documentation available at [the soon].

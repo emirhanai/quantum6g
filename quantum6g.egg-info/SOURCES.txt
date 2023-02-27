@@ -1,6 +1,7 @@
 setup.cfg
 setup.py
 quantum6g/__init__.py
+quantum6g/ad.py
 quantum6g/quantum6g.py
 quantum6g.egg-info/PKG-INFO
 quantum6g.egg-info/SOURCES.txt
