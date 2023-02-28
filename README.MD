@@ -18,7 +18,7 @@ from quantum6g import Quantum6G
 
 ## Create a quantum neural network
 
-``` quantum_6g = Quantum6G(num_wires=4,num_layers=8,batch_size=128,learning_rate=0.002)```
+``` quantum_6g = Quantum6G(input=1,num_wires=1,num_layers=16,learning_rate=0.002)```
 
 ## Build the model
 ``` 
