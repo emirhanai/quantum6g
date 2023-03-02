@@ -1,6 +1,6 @@
 # test.py
 import unittest
-from emirhan_quantum.quantum6g import Quantum6G
+from quantum6g import Quantum6G
 import numpy as np
 
 class TestQuantum6G:

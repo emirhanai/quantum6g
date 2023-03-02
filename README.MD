@@ -18,11 +18,11 @@ from quantum6g import Quantum6G
 
 ## Create a quantum neural network
 
-``` quantum_6g = Quantum6G(input=1,num_wires=1,num_layers=16,learning_rate=0.002)```
+``` quantum_6g = Quantum6G(output_unit=1, num_layers=4, epochs=2, loss='mse', input=4, batch_size=256, learning_rate=0.2)```
 
 ## Build the model
 ``` 
-quantum_6g = quantum_6g.build_model(X_train, y_train, X_test, y_test,epochs=5)
+quantum_6g = quantum_6g.build_model(X_train, y_train, X_test, y_test)
 ```
 
 ## Evaluate the model
@@ -30,6 +30,19 @@ quantum_6g = quantum_6g.build_model(X_train, y_train, X_test, y_test,epochs=5)
 print("Accuracy: {:.2f}%".format(quantum_6g[1][1] * 100))
 print("Loss: {:.2f}%".format(quantum_6g[1][0] * 100))
 ```
+
+## Build and Fit Quantum6G_KNN --- from v1.2.5V
+``` 
+quantum_knn = Quantum6G_KNN(n_qubits=4, n_neighbors=6)
+quantum_knn.fit(X_train, y_train)
+```
+## Evaluate the Quantum6G_KNN model
+``` 
+quantum_pred = quantum_knn.predict(X_test,y_test)
+quantum_accuracy = accuracy_score(y_test, quantum_pred)
+print(f"Accuracy of Quantum6G_KNN: {quantum_accuracy:.3f}")
+```
+
 ## Donate
 You can donate for this project!
 
