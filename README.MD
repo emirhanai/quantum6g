@@ -1,6 +1,6 @@
 
 # Quantum6G: Auto AI Advanced Quantum Neural Networks with 6G Technology
-Quantum6G is an automatic artificial intelligence library that combines quantum computing and 6G technologies to build advanced quantum neural networks. It provides a high-level interface for constructing, training, and evaluating quantum neural networks. This library was developed by [Emirhan BULUT](https://linkedin.com/in/aiemir).
+Quantum6G is an automatic artificial intelligence library that combines quantum computing and 6G technologies to build advanced quantum neural networks. It provides a high-level interface for constructing, training, and evaluating quantum neural networks. This library was developed by [Quantum PIYA](https://www.piya.ai).
 
 ## Installation
 To install the Quantum6G library, simply run the following command: 
