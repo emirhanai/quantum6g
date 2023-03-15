@@ -1,5 +1,6 @@
 setup.cfg
 setup.py
+quantum6g/QCNN.py
 quantum6g/QKNN.py
 quantum6g/__init__.py
 quantum6g/quantum6g.py

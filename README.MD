@@ -42,6 +42,26 @@ quantum_pred = quantum_knn.predict(X_test,y_test)
 quantum_accuracy = accuracy_score(y_test, quantum_pred)
 print(f"Accuracy of Quantum6G_KNN: {quantum_accuracy:.3f}")
 ```
+## Build Quantum Model for QCNN (Quantum Convolutional Neural Network) --- from v1.3.0V
+``` 
+q_cnn = QCNN(
+    input_shape=(2, 2, 1),
+    output_neurons=10,
+    loss_function="sparse_categorical_crossentropy",
+    epochs=5,
+    batch_size=32,
+    optimizer="adam",
+    n_layers=1,
+    n_wires=4,
+)
+q_cnn_model = q_cnn.build_model()
+
+```
+## Evaluate the QCNN model
+``` 
+q_cnn.benchmark(q_cnn_model, x_train_resized[..., np.newaxis], y_train, x_test_resized[..., np.newaxis], y_test)
+
+```
 
 ## Donate
 You can donate for this project!
